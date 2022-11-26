@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="240dp">
+
+        <TextView
+            android:id="@+id/tvChoose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose subpage for character" />
+
+        <android.widget.RadioGroup
+            android:id="@+id/rgOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbOverview"
+                android:layout_width="411dp"
+                android:layout_height="match_parent"
+                android:text="Overview" />
+
+            <RadioButton
+                android:id="@+id/rbCombos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Combos" />
+
+            <RadioButton
+                android:id="@+id/rbStrategy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Strategy" />
+
+            <RadioButton
+                android:id="@+id/rbMatchups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Matchups" />
+
+            <RadioButton
+                android:id="@+id/rbResources"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Resources" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm" />
+
+        </android.widget.RadioGroup>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
